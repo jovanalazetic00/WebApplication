@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "OpcijeKomentar";
+}
+
+
+<style>
+    body {
+        background-image: url("https://i.pinimg.com/originals/e6/4a/f1/e64af1fc0be4e520b40ee24ddebdc65b.jpg");
+        background-size: cover;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: Broadway;
+        font-size: 50px;
+        color: #cc99ff
+    }
+
+    ul {
+        font-family: Broadway;
+        border-bottom-color: violet;
+        text-align: center;
+        border-bottom-color: rebeccapurple;
+        font-size: 22px;
+        list-style: none;
+        display: block;
+        border: dotted;
+        border-color: #cc99ff;
+        margin: 12px;
+    }
+
+    li {
+        color: azure;
+    }
+
+
+    input.submit {
+        font-size: 90%;
+        background-color: wheat;
+    }
+    a {
+        text-align: center;
+        display: block;
+        font-size: 28px;
+        color: aqua;
+        opacity: 1.5;
+    }
+</style>
+
+<h2>Odobri/Odbi Komentar</h2>
+@using FitnesCentarJovana.Models
+<ul>
+    @foreach (Komentar komentar in (List<Komentar>)TempData["komentari"])
+    {
+        <li>
+            Fitnes Centar -  @komentar.FitnesCentar
+        </li>
+        <li>
+            Posetilac -  @komentar.Posetilac
+        </li>
+        <li>
+            Tekst -  @komentar.Tekst
+        </li>
+        <li>
+            Ocena -  @komentar.Ocena
+        </li>
+        <li>
+            Odbijen -  @komentar.Obrisan
+        </li>
+        <li>
+            <form action="~/GrupniTrening/OdobriBlokirajKomentar" method="post">
+                <input type="hidden" value="@komentar.Tekst" name="tekst_komentara" />
+                <input type="hidden" value="@komentar.FitnesCentar" name="naziv_fitnes_centra" />
+                <input type="submit" class="submit" value="Odobri/Odbi" />
+            </form>
+        </li>
+    }
+</ul>
+<a href="~/Prijavljivanje/Opcije">Stranica sa Opcijama</a>
+
+

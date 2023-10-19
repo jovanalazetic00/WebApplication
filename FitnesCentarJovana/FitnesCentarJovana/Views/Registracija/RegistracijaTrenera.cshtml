@@ -1,0 +1,163 @@
+﻿
+@{
+    ViewBag.Title = "RegistracijaTrenera";
+}
+
+@using FitnesCentarJovana.Models
+<style>
+    body {
+        background-image: url("https://i.pinimg.com/originals/e6/4a/f1/e64af1fc0be4e520b40ee24ddebdc65b.jpg");
+        background-size: cover;
+    }
+
+    h2.registracija {
+        font-family: Broadway;
+        text-align: center;
+        font-size: 50px;
+        color: #cc99ff
+    }
+
+    table.registracija {
+        margin-right: auto;
+        margin-left: auto;
+        font-family: Broadway;
+        color: azure;
+        border-style: ridge;
+        border-color: azure;
+        border-spacing: 12px;
+    }
+
+    tr.registracija {
+        font-size: 180%;
+    }
+
+    td.submit {
+        text-align: center;
+    }
+
+    input.submit {
+        font-size: 90%;
+        background-color: wheat;
+    }
+
+    input.registracija {
+        font-size: 90%;
+    }
+
+    td {
+        margin: 20px;
+    }
+
+        td.greska {
+            color: #ff1a1a;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: white;
+        }
+
+    select {
+        font-size: 90%;
+    }
+
+    a {
+        text-align: center;
+        display: block;
+        font-size: 28px;
+        color: aqua;
+        opacity: 1.5;
+    }
+</style>
+
+
+<h2 class="registracija">Registruj se</h2>
+<form action="~/Registracija/PokusajRegistracije" method="post">
+    <table class="registracija">
+        <thead>
+            <tr class="registracija">
+                <td>
+                    Korisnicko ime:
+                </td>
+                <td>
+                    <input class="registracija" type="text" required name="KorisnickoIme" />
+                </td>
+            </tr>
+            <tr class="registracija">
+                <td>
+                    Lozinka:
+                </td>
+                <td>
+                    <input class="registracija" type="password" required value="" name="Lozinka" />
+                </td>
+            </tr>
+            <tr class="registracija">
+                <td>
+                    Ime:
+                </td>
+                <td>
+                    <input class="registracija" type="text" required value="" name="Ime" />
+                </td>
+            </tr>
+            <tr class="registracija">
+                <td>
+                    Prezime:
+                </td>
+                <td>
+                    <input class="registracija" type="text" required value="" name="Prezime" />
+                </td>
+            </tr>
+            <tr class="registracija">
+                <td>
+                    Pol:
+                </td>
+                <td>
+                    <select name="Pol">
+                        <option value="M">Muski</option>
+                        <option value="Z">Zenski</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="registracija">
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input class="registracija" type="text" required value="" name="Email" />
+                </td>
+            </tr>
+            <tr class="registracija">
+                <td>
+                    Datum Rodjenja:
+                </td>
+                <td>
+                    <input class="registracija" type="date" required value="" name="DatumRodjenja" />
+                </td>
+            </tr>
+            <tr class="registracija">
+                <td>
+                    Fitnes Centar:
+                </td>
+                <td>
+                    <select name="fitnes_centar">
+                        @foreach (string fitnes_centar in (List<string>)TempData["fitnes_centri"])
+                        {
+                            <option value="@fitnes_centar">@fitnes_centar</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+            <tr class="registracija">
+                <td class="submit" colspan="2">
+                    <input type="hidden" value="TRENER" name="Uloga" />
+                    <input class="submit" type="submit" value="Registracija" />
+                </td>
+            </tr>
+            <tr>
+                <td class="greska">
+                    @TempData["Poruka"]
+                </td>
+            </tr>
+        </thead>
+    </table>
+</form>
+<a href="~/Prijavljivanje/Index">Stranica za Prijavu</a>
+<a href="~/Prijavljivanje/Opcije">Stranica sa Opcijama</a>

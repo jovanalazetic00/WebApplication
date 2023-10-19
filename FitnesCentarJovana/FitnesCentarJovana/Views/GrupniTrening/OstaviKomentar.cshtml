@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "OstaviKomentar";
+}
+
+
+<style>
+    body {
+        background-image: url("https://i.pinimg.com/originals/e6/4a/f1/e64af1fc0be4e520b40ee24ddebdc65b.jpg");
+        background-size: cover;
+    }
+
+    h2.dodavanje {
+        font-family: Broadway;
+        text-align: center;
+        font-size: 50px;
+        color: #cc99ff
+    }
+
+    table.dodavanje {
+        margin-right: auto;
+        margin-left: auto;
+        font-family: Broadway;
+        color: azure;
+        border-style: ridge;
+        border-color: azure;
+        border-spacing: 12px;
+    }
+
+    tr.dodavanje {
+        font-size: 180%;
+    }
+
+    td.submit {
+        text-align: center;
+    }
+
+    input.submit {
+        font-size: 90%;
+        background-color: wheat;
+    }
+
+    input.dodavanje {
+        font-size: 90%;
+    }
+
+    td {
+        margin: 20px;
+    }
+
+        td.greska {
+            color: #ff1a1a;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: white;
+        }
+
+    select {
+        font-size: 90%;
+    }
+
+    a {
+        text-align: center;
+        display: block;
+        font-size: 28px;
+        color: aqua;
+        opacity: 1.5;
+    }
+</style>
+
+
+<h2 class="dodavanje">Ostavi Komentar</h2>
+<form action="~/GrupniTrening/PokusajDodavanjaKomentara" method="post">
+    <table class="dodavanje">
+        <thead>
+            <tr class="dodavanje">
+                <td>
+                    Tekst:
+                </td>
+                <td>
+                    <input class="dodavanje" type="text" value="" name="Tekst" />
+                </td>
+            </tr>
+            <tr class="dodavanje">
+                <td>
+                    Ocena:
+                </td>
+                <td>
+                    <input class="dodavanje" type="number" value="" name="Ocena" />
+                </td>
+            </tr>
+            <tr class="dodavanje">
+                <td class="submit" colspan="2">
+                    <input class="dodavanje" type="hidden" name="fitnes_centar_naziv" value="@TempData["fitnes_centar_naziv"]" />
+                    <input class="submit" type="submit" value="Ostavi Komentar" />
+                </td>
+            </tr>
+            <tr>
+                <td class="greska">
+                    @TempData["Poruka"]
+                </td>
+            </tr>
+        </thead>
+    </table>
+</form>
+<a href="~/Prijavljivanje/Opcije">Stranica sa Opcijama</a>

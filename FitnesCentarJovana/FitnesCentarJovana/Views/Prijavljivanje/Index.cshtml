@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<style>
+    body {
+        background-image: url("https://i.pinimg.com/originals/e6/4a/f1/e64af1fc0be4e520b40ee24ddebdc65b.jpg");
+        background-size: cover;
+    }
+
+    h2.login {
+        font-family: Broadway;
+        text-align: center;
+        font-size: 50px;
+        color: #cc99ff
+    }
+
+    table.login {
+        margin-right: auto;
+        margin-left: auto;
+        font-family: Broadway;
+        color: azure;
+        border-style: ridge;
+        border-bottom-color: aliceblue;
+        border-spacing: 12px;
+    }
+
+    tr.login {
+        font-size: 180%;
+    }
+
+    td.submit {
+        text-align: center;
+    }
+
+    input.submit {
+        font-size: 90%;
+        background-color: wheat;
+    }
+
+    input.login {
+        font-size: 90%;
+    }
+
+    td {
+        margin: 20px;
+    }
+
+        td.greska {
+            color: #ff1a1a;
+            font-weight: bold;
+            font-size:15px;
+            background-color:white;
+        }
+
+    a {
+        text-align: center;
+        display: block;
+        font-size:28px;
+        color: aqua;
+        opacity: 1.5;
+    }
+</style>
+
+<h2 class="login">Prijavi se</h2>
+<form action="~/Prijavljivanje/PokusajPrijave" method="post">
+    <table class="login">
+        <thead>
+            <tr class="login">
+                <td>
+                    Korisnicko ime:
+                </td>
+                <td>
+                    <input class="login" type="text" value="" name="korisnickoime" />
+                </td>
+            </tr>
+            <tr class="login">
+                <td>
+                    Lozinka:
+                </td>
+                <td>
+                    <input class="login" type="password" value="" name="lozinka" />
+                </td>
+            </tr>
+            <tr class="login">
+                <td class="submit" colspan="2">
+                    <input class="submit" type="submit" value="Prijava" />
+                </td>
+            </tr>
+            <tr>
+                <td class="greska">
+                    @TempData["Poruka"]
+                </td>
+            </tr>
+        </thead>
+    </table>
+</form>
+
+<a href="~/Registracija/Index">Stranica za Registraciju</a>
+<a href="~/FitnesCentar/PrikazSvih">Stranica za Prikaz Fitnes Centara</a>

@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "ModifikujGrupniTrening";
+}
+
+<style>
+    body {
+        background-image: url("https://i.pinimg.com/originals/e6/4a/f1/e64af1fc0be4e520b40ee24ddebdc65b.jpg");
+        background-size: cover;
+    }
+
+    h2.dodavanje {
+        font-family: Broadway;
+        text-align: center;
+        font-size: 50px;
+        color: #cc99ff
+    }
+
+    table.dodavanje {
+        margin-right: auto;
+        margin-left: auto;
+        font-family: Broadway;
+        color: azure;
+        border-style: ridge;
+        border-color: azure;
+        border-spacing: 12px;
+    }
+
+    tr.dodavanje {
+        font-size: 180%;
+    }
+
+    td.submit {
+        text-align: center;
+    }
+
+    input.submit {
+        font-size: 90%;
+        background-color: wheat;
+    }
+
+    input.dodavanje {
+        font-size: 90%;
+    }
+
+    td {
+        margin: 20px;
+    }
+
+        td.greska {
+            color: #ff1a1a;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: white;
+        }
+
+    select {
+        font-size: 90%;
+    }
+
+    a {
+        text-align: center;
+        display: block;
+        font-size: 28px;
+        color: aqua;
+        opacity: 1.5;
+    }
+</style>
+
+<h2 class="dodavanje">Modifikuj Grupni Trening</h2>
+<form action="~/GrupniTrening/PokusajModifikacije" method="post">
+    <table class="dodavanje">
+        <thead>
+            <tr class="dodavanje">
+                <td>
+                    Naziv:
+                </td>
+                <td>
+                    <input class="dodavanje" type="text"  name="Naziv" />
+                    <input type="hidden" name="grupni_trening_naziv" value="@TempData["grupni_trening_naziv"]" />
+                </td>
+            </tr>
+            <tr class="dodavanje">
+                <td>
+                    Tip Treninga:
+                </td>
+                <td>
+                    <select name="TipTreninga">
+                        <option value="YOGA">Yoga</option>
+                        <option value="LES_MILLS_TONE">Les Mills Tone</option>
+                        <option value="BODY_PUMP">Body Pump</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="dodavanje">
+                <td>
+                    Trajanje Treninga:
+                </td>
+                <td>
+                    <input class="dodavanje" type="number"  value="" name="Trajanje" />
+                </td>
+            <tr class="dodavanje">
+                <td>
+                    Datum i Vreme:
+                </td>
+                <td>
+                    <input class="dodavanje" type="datetime-local"  value="" name="DatumVreme" />
+                </td>
+            </tr>
+            <tr class="dodavanje">
+                <td>
+                    Maksimalan Broj Posetilaca:
+                </td>
+                <td>
+                    <input class="dodavanje" type="number"  value="" name="MaksimumPosetialca" />
+                </td>
+            </tr>
+            <tr class="dodavanje">
+                <td class="submit" colspan="2">
+                    <input class="submit" type="submit" value="Modifikuj" />
+                </td>
+            </tr>
+            <tr>
+                <td class="greska">
+                    @TempData["Poruka"]
+                </td>
+            </tr>
+        </thead>
+    </table>
+</form>
+<a href="~/Prijavljivanje/Opcije">Stranica sa Opcijama</a>
+

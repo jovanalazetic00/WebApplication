@@ -1,0 +1,234 @@
+﻿
+@{
+    ViewBag.Title = "PrikazFitnesCentaraOsnovno";
+}
+
+<style>
+    body {
+        background-image: url("https://i.pinimg.com/originals/e6/4a/f1/e64af1fc0be4e520b40ee24ddebdc65b.jpg");
+        background-size: cover;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: Broadway;
+        font-size: 50px;
+        color: #cc99ff
+    }
+
+    ul {
+        font-family: Broadway;
+        border-bottom-color: violet;
+        text-align: center;
+        border-bottom-color: rebeccapurple;
+        font-size: 22px;
+        list-style: none;
+        display: block;
+        border: dotted;
+        border-color: #cc99ff;
+        margin: 12px;
+    }
+
+    li {
+        color: azure;
+    }
+
+    select {
+        font-size: 90%;
+    }
+
+    table.pretraga {
+        margin-right: auto;
+        margin-left: auto;
+        font-family: Broadway;
+        color: azure;
+        border-style: ridge;
+        border-color: azure;
+        border-spacing: 12px;
+    }
+
+    tr.pretraga {
+        font-size: 180%;
+    }
+
+    td.submit {
+        text-align: center;
+    }
+
+    input.submit {
+        font-size: 90%;
+        background-color: wheat;
+    }
+
+    input.pretraga {
+        font-size: 90%;
+    }
+
+    td {
+        margin: 20px;
+    }
+
+
+    input.submit {
+        font-size: 90%;
+        background-color: wheat;
+    }
+
+    a {
+        text-align: center;
+        display: block;
+        font-size: 28px;
+        color: aqua;
+        opacity: 1.5;
+    }
+</style>
+
+<h2>Prikaz Fitnes Centara</h2>
+@using FitnesCentarJovana.Models
+@{
+
+    foreach (var fitnes_centar in (List<Fitnes_Centar>)TempData["fitnes_centri"])
+    {
+        <ul>
+            <li>
+                Naziv -  @fitnes_centar.Naziv
+            </li>
+            <li>
+                Adresa  - @fitnes_centar.Adresa
+            </li>
+            <li>
+                Godina Otvaranja - @fitnes_centar.GodinaOtvaranja
+            </li>
+            <li>
+                Vlasnik - @fitnes_centar.Vlasnik
+            </li>
+            <li>
+                Cena Mesecne Clanarine - @fitnes_centar.CMesecne
+            </li>
+            <li>
+                Cena Godisnje Clanarine - @fitnes_centar.CGodisnje
+            </li>
+            <li>
+                Cena Jednog Obicnog Treninga - @fitnes_centar.CJednogObicnog
+            </li>
+            <li>
+                Cena Grupnog Treninga - @fitnes_centar.CGrupnog
+            </li>
+            <li>
+                Cena Personalnog Treninga - @fitnes_centar.CJednogPerosnalnog
+            </li>
+            <li>
+                <form action="~/FitnesCentar/PrikazFitnesCentaraDetaljno" method="post">
+                    <input type="hidden" value="@fitnes_centar.Naziv" name="fitnes_centar_naziv" />
+                    <input type="submit" class="submit" value="Detalji" />
+                </form>
+            </li>
+            @if (Session["KORISNIK"] != null && ((Korisnik)Session["KORISNIK"]).Uloga == ULOGE.VLASNIK && ((Korisnik)Session["KORISNIK"]).Moji_Fitnes_Centri.Contains(fitnes_centar.Naziv))
+            {
+                <li>
+                    <form action="~/FitnesCentar/ModifikujFitnesCentar" method="post">
+                        <input type="hidden" value="@fitnes_centar.Naziv" name="fitnes_centar_naziv" />
+                        <input type="submit" class="submit" value="Modifikuj Fitnes Centar" />
+                    </form>
+                </li>
+                <li>
+                    <form action="~/FitnesCentar/ObrisiFitnesCentar" method="post">
+                        <input type="hidden" value="@fitnes_centar.Naziv" name="fitnes_centar_naziv" />
+                        <input type="submit" class="submit" value="Obrisi Fitnes Centar" />
+                    </form>
+                </li>
+            }
+          
+        </ul>
+        }
+    }
+    <a href="~/Prijavljivanje/Opcije">Stranica sa Opcijama</a>
+
+    <form action="~/FitnesCentar/Pretraga" method="post">
+        <table class="pretraga">
+            <thead>
+                <tr class="pretraga">
+                    <td>
+                        Naziv:
+                    </td>
+                    <td>
+                        <input class="pretraga" type="text" value="" name="Naziv" />
+                    </td>
+                </tr>
+                <tr class="pretraga">
+                    <td>
+                        Adresa:
+                    </td>
+                    <td>
+                        <input class="pretraga" type="text" value="" name="Adresa" />
+                    </td>
+                </tr>
+                <tr class="pretraga">
+                    <td>
+                        Godina Otvaranja Fitnes Centra:
+                    </td>
+                    <td>
+                        MIN: <input class="pretraga" type="number" name="minGodinaOtvaranja" />
+                    </td>
+                    <td>
+                        MAX: <input class="pretraga" type="number" name="maxGodinaOtvaranja" />
+                    </td>
+                </tr>
+                <tr class="pretraga">
+                    <td class="submit" colspan="2">
+                        <input class="submit" type="submit" value="Pretrazi" />
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </form>
+
+
+    <form action="~/FitnesCentar/Sortiranje">
+        <table class="pretraga">
+            <thead>
+                <tr class="pretraga">
+                    <td>
+                        Po Nazivu
+                    </td>
+                    <td>
+                        <select name="Naziv">
+                            <option value="N">Nista</option>
+                            <option value="O">Opadajuce</option>
+                            <option value="R">Rastuce</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="pretraga">
+                    <td>
+                        Po Adresi
+                    </td>
+                    <td>
+                        <select name="Adresa">
+                            <option value="N">Nista</option>
+                            <option value="O">Opadajuce</option>
+                            <option value="R">Rastuce</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="pretraga">
+                    <td>
+                        Po Godini Otvaranja Fitnes Centra
+                    </td>
+                    <td>
+                        <select name="GodinaOtvaranja">
+                            <option value="N">Nista</option>
+                            <option value="O">Opadajuce</option>
+                            <option value="R">Rastuce</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="pretraga">
+                    <td class="submit" colspan="2">
+                        <input class="submit" type="submit" value="Sortiraj" />
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </form>
+

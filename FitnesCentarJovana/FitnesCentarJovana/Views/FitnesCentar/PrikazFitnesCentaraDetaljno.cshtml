@@ -1,0 +1,236 @@
+﻿
+@{
+    ViewBag.Title = "PrikazFitnesCentaraOsnovno";
+}
+
+<style>
+    body {
+        background-image: url("https://i.pinimg.com/originals/e6/4a/f1/e64af1fc0be4e520b40ee24ddebdc65b.jpg");
+        background-size: cover;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: Broadway;
+        font-size: 50px;
+        color: #cc99ff
+    }
+
+    ul {
+        font-family: Broadway;
+        border-bottom-color: violet;
+        text-align: center;
+        border-bottom-color: rebeccapurple;
+        font-size: 22px;
+        list-style: none;
+        display: block;
+        border: dotted;
+        border-color: #cc99ff;
+        margin: 12px;
+    }
+
+    li {
+        color: azure;
+    }
+
+    select {
+        font-size: 90%;
+    }
+
+    table.pretraga {
+        margin-right: auto;
+        margin-left: auto;
+        font-family: Broadway;
+        color: azure;
+        border-style: ridge;
+        border-color: azure;
+        border-spacing: 12px;
+    }
+
+    tr.pretraga {
+        font-size: 180%;
+    }
+
+    td.submit {
+        text-align: center;
+    }
+
+    input.submit {
+        font-size: 90%;
+        background-color: wheat;
+    }
+
+    input.pretraga {
+        font-size: 90%;
+    }
+
+    td {
+        margin: 20px;
+    }
+
+
+    input.submit {
+        font-size: 90%;
+        background-color: wheat;
+    }
+
+    a {
+        text-align: center;
+        display: block;
+        font-size: 28px;
+        color: aqua;
+        opacity: 1.5;
+    }
+</style>
+
+<h2>Prikaz Fitnes Centara</h2>
+@using FitnesCentarJovana.Models
+@{
+    <ul>
+        <li>
+            Naziv -  @(((Fitnes_Centar)TempData["fitnes_centar"]).Naziv)
+        </li>
+        <li>
+            Adresa  - @(((Fitnes_Centar)TempData["fitnes_centar"]).Adresa)
+        </li>
+        <li>
+            Godina Otvaranja - @(((Fitnes_Centar)TempData["fitnes_centar"]).GodinaOtvaranja)
+        </li>
+        <li>
+            Vlasnik - @(((Fitnes_Centar)TempData["fitnes_centar"]).Vlasnik)
+        </li>
+        <li>
+            Cena Mesecne Clanarine - @(((Fitnes_Centar)TempData["fitnes_centar"]).CMesecne)
+        </li>
+        <li>
+            Cena Godisnje Clanarine - @(((Fitnes_Centar)TempData["fitnes_centar"]).CGodisnje)
+        </li>
+        <li>
+            Cena Jednog Obicnog Treninga - @(((Fitnes_Centar)TempData["fitnes_centar"]).CJednogObicnog)
+        </li>
+        <li>
+            Cena Grupnog Treninga - @(((Fitnes_Centar)TempData["fitnes_centar"]).CGrupnog)
+        </li>
+        <li>
+            Cena Personalnog Treninga - @(((Fitnes_Centar)TempData["fitnes_centar"]).CJednogPerosnalnog)
+        </li>
+        @if (Session["KORISNIK"] != null && ((Korisnik)Session["KORISNIK"]).Uloga == ULOGE.VLASNIK && ((Korisnik)Session["KORISNIK"]).Moji_Fitnes_Centri.Contains(((Fitnes_Centar)TempData["fitnes_centar"]).Naziv))
+        {
+            <li>
+                <form action="~/FitnesCentar/ModifikujFitnesCentar" method="post">
+                    <input type="hidden" value="@(((Fitnes_Centar)TempData["fitnes_centar"]).Naziv)" name="fitnes_centar_naziv" />
+                    <input type="submit" class="submit" value="Modifikuj Fitnes Centar" />
+                </form>
+            </li>
+            <li>
+                <form action="~/FitnesCentar/ObrisiFitnesCentar" method="post">
+                    <input type="hidden" value="@(((Fitnes_Centar)TempData["fitnes_centar"]).Naziv)" name="fitnes_centar_naziv" />
+                    <input type="submit" class="submit" value="Obrisi Fitnes Centar" />
+                </form>
+            </li>
+        }
+        <li>
+            <form action="~/GrupniTrening/PrikazSvihPredstojecih" method="post">
+                <input type="hidden" value="@(((Fitnes_Centar)TempData["fitnes_centar"]).Naziv)" name="fitnes_centar_naziv" />
+                <input type="submit" class="submit" value="Prikaz Grupnih Treninga" />
+            </form>
+        </li>
+
+    </ul>
+
+    <a href="~/Prijavljivanje/Opcije">Stranica sa Opcijama</a>
+
+    foreach (var grupni_trening in (List<Grupni_Trening>)TempData["grupni_treninzi"])
+    {
+        <ul>
+            <li>
+                Naziv -  @grupni_trening.Naziv
+            </li>
+            <li>
+                Tip treninga  - @grupni_trening.TipTreninga
+            </li>
+            <li>
+                Fitnes Centar - @grupni_trening.FitnesCentar
+            </li>
+            <li>
+                Trajanje - @grupni_trening.Trajanje
+            </li>
+            <li>
+                Datum i Vreme - @grupni_trening.DatumVreme
+            </li>
+            <li>
+                Maksimum Posetilaca - @grupni_trening.MaksimumPosetialca
+            </li>
+            <li>
+                Spisak Posetilaca -
+                @foreach (var posetilac in grupni_trening.SpisakPosetilaca)
+                {
+                    @: @posetilac
+                }
+            </li>
+            <li>
+                ukupan Broj Posetilaca - @grupni_trening.SpisakPosetilaca.Count
+            </li>
+            @if (Session["KORISNIK"] != null && ((Korisnik)Session["KORISNIK"]).Uloga == ULOGE.TRENER && ((Korisnik)Session["KORISNIK"]).Grupni_Treninzi_Trener_Angazovan.Contains(grupni_trening.Naziv))
+            {
+                <li>
+                    <form action="~/GrupniTrening/ModifikujGrupniTrening" method="post">
+                        <input type="hidden" value="@grupni_trening.Naziv" name="grupni_trening_naziv" />
+                        <input type="submit" class="submit" value="Modifikuj Grupni Trening" />
+                    </form>
+                </li>
+                <li>
+                    <form action="~/GrupniTrening/ObrisiGrupniTrening" method="post">
+                        <input type="hidden" value="@grupni_trening.Naziv" name="grupni_trening_naziv" />
+                        <input type="submit" class="submit" value="Obrisi Grupni Trening" />
+                    </form>
+                </li>
+            }
+            else if (Session["KORISNIK"] != null && ((Korisnik)Session["KORISNIK"]).Uloga == ULOGE.POSETILAC && TempData["komentar"] == null)
+            {
+                <li>
+                    <form action="~/GrupniTrening/PrijaviSe" method="post">
+                        <input type="hidden" value="@grupni_trening.Naziv" name="grupni_trening_naziv" />
+                        <input type="submit" class="submit" value="Prijavi Se Za Grupni Trening" />
+                    </form>
+                </li>
+            }
+            else if (TempData["komentar"] != null)
+            {
+                <li>
+                    <form action="~/GrupniTrening/OstaviKomentar" method="post">
+                        <input type="hidden" value="@grupni_trening.Naziv" name="grupni_trening_naziv" />
+                        <input type="submit" class="submit" value="Ostavi Komentar Za Grupni Trening" />
+                    </form>
+                </li>
+            }
+
+        </ul>
+    }
+    <a href="~/Prijavljivanje/Opcije">Stranica sa Opcijama</a>
+    <p class="greska">
+        @TempData["Poruka"]
+    </p>
+
+
+
+    foreach (var komentar in (List<Komentar>
+    )TempData["komentari"])
+    {
+    <ul>
+        <li>
+            Fitnes Centar -  @komentar.FitnesCentar
+        </li>
+        <li>
+            Posetilac -  @komentar.Posetilac
+        </li>
+        <li>
+            Tekst -  @komentar.Tekst
+        </li>
+        <li>
+            Ocena -  @komentar.Ocena
+        </li>
+    </ul>
+    }
+    }
+

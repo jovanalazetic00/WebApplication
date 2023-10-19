@@ -1,0 +1,213 @@
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\FitnesCentarJovana.dll.config
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\FitnesCentarJovana.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\FitnesCentarJovana.pdb
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csc.exe
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csc.exe.config
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csc.rsp
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csi.exe
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csi.exe.config
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csi.rsp
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.AppContext.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Console.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.Compression.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.Pipes.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Claims.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.ValueTuple.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Xml.XPath.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\vbc.exe
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\vbc.exe.config
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\vbc.rsp
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\VBCSCompiler.exe
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Helpers.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Mvc.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Razor.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.Deployment.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.Razor.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Razor.xml
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.xml
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.Deployment.xml
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.Razor.xml
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Helpers.xml
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Mvc.xml
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.csprojAssemblyReference.cache
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.csproj.CoreCompileInputs.cache
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.csproj.CopyComplete
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.pdb
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\Newtonsoft.Json.dll
+C:\Users\radex\Desktop\web 1 projekti\Jovana\FitnesCentarJovana\FitnesCentarJovana\bin\Newtonsoft.Json.xml
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\FitnesCentarJovana.dll.config
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\FitnesCentarJovana.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\FitnesCentarJovana.pdb
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csc.exe
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csc.exe.config
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csc.rsp
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csi.exe
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csi.exe.config
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csi.rsp
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.AppContext.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Console.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.Compression.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.Pipes.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Claims.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.ValueTuple.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Xml.XPath.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\vbc.exe
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\vbc.exe.config
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\vbc.rsp
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\Newtonsoft.Json.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Helpers.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Mvc.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Razor.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.Deployment.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.Razor.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\Newtonsoft.Json.xml
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Razor.xml
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.xml
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.Deployment.xml
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.Razor.xml
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Helpers.xml
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Mvc.xml
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.csprojAssemblyReference.cache
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.csproj.CopyComplete
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.dll
+C:\Users\User\Downloads\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.pdb
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\FitnesCentarJovana.dll.config
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\FitnesCentarJovana.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\FitnesCentarJovana.pdb
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csc.exe
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csc.exe.config
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csc.rsp
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csi.exe
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csi.exe.config
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\csi.rsp
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.AppContext.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Console.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.Compression.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.IO.Pipes.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Claims.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.ValueTuple.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Xml.XPath.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\vbc.exe
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\vbc.exe.config
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\vbc.rsp
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\Newtonsoft.Json.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Helpers.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Mvc.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Razor.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.Deployment.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.Razor.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\Newtonsoft.Json.xml
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Razor.xml
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.xml
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.Deployment.xml
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Webpages.Razor.xml
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Helpers.xml
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\System.Web.Mvc.xml
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.csprojAssemblyReference.cache
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.csproj.CopyComplete
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.dll
+C:\Users\User\Documents\pr111-2019-web-projekat\FitnesCentarJovana\FitnesCentarJovana\obj\Debug\FitnesCentarJovana.pdb

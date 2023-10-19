@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Blokiranje";
+}
+
+<style>
+    body {
+        background-image: url("https://i.pinimg.com/originals/e6/4a/f1/e64af1fc0be4e520b40ee24ddebdc65b.jpg");
+        background-size: cover;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: Broadway;
+        font-size: 50px;
+        color: #cc99ff
+    }
+
+    ul {
+        font-family: Broadway;
+        border-bottom-color: violet;
+        text-align: center;
+        border-bottom-color: rebeccapurple;
+        font-size: 22px;
+        list-style: none;
+        display: block;
+        border: dotted;
+        border-color: #cc99ff;
+        margin: 12px;
+    }
+
+    li {
+        color: azure;
+    }
+
+
+    input.submit {
+        font-size: 90%;
+        background-color: wheat;
+    }
+
+    a {
+        text-align: center;
+        display: block;
+        font-size: 28px;
+        color: aqua;
+        opacity: 1.5;
+    }
+</style>
+
+<h2 class="blokiranje">Blokiraj Trenera</h2>
+@using FitnesCentarJovana.Models
+<ul>
+    @foreach (Korisnik trener in (List<Korisnik>)TempData["treneri"])
+    {
+        <li>
+            Korisnicko Ime - @trener.KorisnickoIme
+        </li>
+        <li>
+            Ime - @trener.Ime
+        </li>
+        <li>
+            <form action="~/Registracija/Blokiranje" method="post">
+                <input type="hidden" value="@trener.KorisnickoIme" name="korisnicko_ime_trenera" />
+                <input type="submit" class="submit" value="Blokiraj Trenera" />
+            </form>
+        </li>
+    }
+</ul>
+<a href="~/Prijavljivanje/Opcije">Stranica sa Opcijama</a>
+

@@ -1,0 +1,152 @@
+﻿
+@{
+    ViewBag.Title = "ModifikujFitnesCentar";
+}
+
+
+<style>
+    body {
+        background-image: url("https://i.pinimg.com/originals/e6/4a/f1/e64af1fc0be4e520b40ee24ddebdc65b.jpg");
+        background-size: cover;
+    }
+
+    h2.dodavanje {
+        font-family: Broadway;
+        text-align: center;
+        font-size: 50px;
+        color: #cc99ff
+    }
+
+    table.dodavanje {
+        margin-right: auto;
+        margin-left: auto;
+        font-family: Broadway;
+        color: azure;
+        border-style: ridge;
+        border-color: azure;
+        border-spacing: 12px;
+    }
+
+    tr.dodavanje {
+        font-size: 180%;
+    }
+
+    td.submit {
+        text-align: center;
+    }
+
+    input.submit {
+        font-size: 90%;
+        background-color: wheat;
+    }
+
+    input.dodavanje {
+        font-size: 90%;
+    }
+
+    td {
+        margin: 20px;
+    }
+
+        td.greska {
+            color: #ff1a1a;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: white;
+        }
+
+    select {
+        font-size: 90%;
+    }
+
+    a {
+        text-align: center;
+        display: block;
+        font-size: 28px;
+        color: aqua;
+        opacity: 1.5;
+    }
+</style>
+
+<h2 class="dodavanje">Modifikuj Fitnes Centar</h2>
+<form action="~/FitnesCentar/PokusajModifikacije" method="post">
+    <table class="dodavanje">
+        <thead>
+            <tr class="dodavanje">
+                <td>
+                    Naziv:
+                </td>
+                <td>
+                    <input class="dodavanje" value=" " type="text" name="Naziv" />
+                    <input type="hidden" name="fitnes_centar_naziv" value="@TempData["fitnes_centar_naziv"]" />
+                </td>
+            </tr>
+            <tr class="dodavanje">
+                <td>
+                    Adresa:
+                </td>
+                <td>
+                    <input class="dodavanje" type="text"  value=" " name="Adresa" />
+                </td>
+            </tr>
+            <tr class="dodavanje">
+                <td>
+                    Godina Otvaranja:
+                </td>
+                <td>
+                    <input class="dodavanje" type="number" min="1960"  value="" name="GodinaOtvaranja" />
+                </td>
+            </tr>
+            <tr class="dodavanje">
+                <td>
+                    Cena Mesecne Clanarine:
+                </td>
+                <td>
+                    <input class="dodavanje" type="number"  value="" name="CMesecne" />
+                </td>
+            <tr class="dodavanje">
+                <td>
+                    Cena Godisnje Clanarine:
+                </td>
+                <td>
+                    <input class="dodavanje" type="number"  value="" name="CGodisnje" />
+                </td>
+            </tr>
+            <tr class="dodavanje">
+                <td>
+                    Cena Jednog Treninga:
+                </td>
+                <td>
+                    <input class="dodavanje" type="number"  value="" name="CJednogObicnog" />
+                </td>
+            </tr>
+            <tr class="dodavanje">
+                <td>
+                    Cena Grupnog Treninga:
+                </td>
+                <td>
+                    <input class="dodavanje" type="number"  value="" name="CGrupnog" />
+                </td>
+            </tr>
+            <tr class="dodavanje">
+                <td>
+                    Cena Personalnog Treninga:
+                </td>
+                <td>
+                    <input class="dodavanje" type="number"  value="" name="CJednogPerosnalnog" />
+                </td>
+            </tr>
+            <tr class="dodavanje">
+                <td class="submit" colspan="2">
+                    <input class="submit" type="submit" value="Modifikuj" />
+                </td>
+            </tr>
+            <tr>
+                <td class="greska">
+                    @TempData["Poruka"]
+                </td>
+            </tr>
+        </thead>
+    </table>
+</form>
+<a href="~/Prijavljivanje/Opcije">Stranica sa Opcijama</a>

@@ -1,0 +1,258 @@
+﻿
+@{
+    ViewBag.Title = "PregledGrupnihTreninga";
+}
+
+<style>
+    body {
+        background-image: url("https://i.pinimg.com/originals/e6/4a/f1/e64af1fc0be4e520b40ee24ddebdc65b.jpg");
+        background-size: cover;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: Broadway;
+        font-size: 50px;
+        color: #cc99ff
+    }
+
+    ul {
+        font-family: Broadway;
+        border-bottom-color: violet;
+        text-align: center;
+        border-bottom-color: rebeccapurple;
+        font-size: 22px;
+        list-style: none;
+        display: block;
+        border: dotted;
+        border-color: #cc99ff;
+        margin: 12px;
+    }
+
+    li {
+        color: azure;
+    }
+
+    p.greska {
+        color: #ff1a1a;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: white;
+    }
+
+    select {
+        font-size: 90%;
+    }
+
+    table.pretraga {
+        margin-right: auto;
+        margin-left: auto;
+        font-family: Broadway;
+        color: azure;
+        border-style: ridge;
+        border-color: azure;
+        border-spacing: 12px;
+    }
+
+    tr.pretraga {
+        font-size: 180%;
+    }
+
+    td.submit {
+        text-align: center;
+    }
+
+    input.submit {
+        font-size: 90%;
+        background-color: wheat;
+    }
+
+    input.pretraga {
+        font-size: 90%;
+    }
+
+    td {
+        margin: 20px;
+    }
+
+
+    input.submit {
+        font-size: 90%;
+        background-color: wheat;
+    }
+    a {
+        text-align: center;
+        display: block;
+        font-size: 28px;
+        color: aqua;
+        opacity: 1.5;
+    }
+</style>
+
+<h2>Pregled Grupnih Treninga</h2>
+
+@using FitnesCentarJovana.Models
+@{
+
+    foreach (var grupni_trening in (List<Grupni_Trening>)TempData["grupni_treninzi"])
+    {
+        <ul>
+            <li>
+                Naziv -  @grupni_trening.Naziv
+            </li>
+            <li>
+                Tip treninga  - @grupni_trening.TipTreninga
+            </li>
+            <li>
+                Fitnes Centar - @grupni_trening.FitnesCentar
+            </li>
+            <li>
+                Trajanje - @grupni_trening.Trajanje
+            </li>
+            <li>
+                Datum i Vreme - @grupni_trening.DatumVreme
+            </li>
+            <li>
+                Maksimum Posetilaca - @grupni_trening.MaksimumPosetialca
+            </li>
+            <li>
+                Spisak Posetilaca -
+                @foreach (var posetilac in grupni_trening.SpisakPosetilaca)
+                {
+                    @: @posetilac
+                }
+            </li>
+            <li>
+                ukupan Broj Posetilaca - @grupni_trening.SpisakPosetilaca.Count
+            </li>
+            @if (Session["KORISNIK"] != null && ((Korisnik)Session["KORISNIK"]).Uloga == ULOGE.TRENER)
+            {
+                <li>
+                    <form action="~/GrupniTrening/ModifikujGrupniTrening" method="post">
+                        <input type="hidden" value="@grupni_trening.Naziv" name="grupni_trening_naziv" />
+                        <input type="submit" class="submit" value="Modifikuj Grupni Trening" />
+                    </form>
+                </li>
+                <li>
+                    <form action="~/GrupniTrening/ObrisiGrupniTrening" method="post">
+                        <input type="hidden" value="@grupni_trening.Naziv" name="grupni_trening_naziv" />
+                        <input type="submit" class="submit" value="Obrisi Grupni Trening" />
+                    </form>
+                </li>
+            }
+            else if (Session["KORISNIK"] != null && ((Korisnik)Session["KORISNIK"]).Uloga == ULOGE.POSETILAC && TempData["komentar"] == null)
+            {
+                <li>
+                    <form action="~/GrupniTrening/PrijaviSe" method="post">
+                        <input type="hidden" value="@grupni_trening.Naziv" name="grupni_trening_naziv" />
+                        <input type="submit" class="submit" value="Prijavi Se Za Grupni Trening" />
+                    </form>
+                </li>
+            }
+            else if (TempData["komentar"] != null)
+            {
+                <li>
+                    <form action="~/GrupniTrening/OstaviKomentar" method="post">
+                        <input type="hidden" value="@grupni_trening.Naziv" name="grupni_trening_naziv" />
+                        <input type="submit" class="submit" value="Ostavi Komentar Za Grupni Trening" />
+                    </form>
+                </li>
+            }
+
+        </ul>
+    }
+    <a href="~/Prijavljivanje/Opcije">Stranica sa Opcijama</a>
+    <p class="greska">
+        @TempData["Poruka"]
+    </p>
+}
+
+@if (Session["KORISNIK"] != null)
+{
+    <form action="~/GrupniTrening/Pretraga" method="post">
+        <table class="pretraga">
+            <thead>
+                <tr class="pretraga">
+                    <td>
+                        Naziv:
+                    </td>
+                    <td>
+                        <input class="pretraga" type="text" value="" name="Naziv" />
+                    </td>
+                </tr>
+                <tr class="pretraga">
+                    <td>
+                        Tip treninga:
+                    </td>
+                    <td>
+                        <input class="pretraga" type="text" value="" name="TipTreninga" />
+                    </td>
+                </tr>
+                <tr class="pretraga">
+                    <td>
+                        Datum i Vreme:
+                    </td>
+                    <td>
+                        MIN: <input class="pretraga" type="datetime-local" name="minDatumVreme" />
+                    </td>
+                    <td>
+                        MAX: <input class="pretraga" type="datetime-local" name="maxDatumVreme" />
+                    </td>
+                </tr>
+                <tr class="pretraga">
+                    <td class="submit" colspan="2">
+                        <input class="submit" type="submit" value="Pretrazi" />
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </form>
+
+    <form action="~/GrupniTrening/Sortiranje">
+        <table class="pretraga">
+            <thead>
+                <tr class="pretraga">
+                    <td>
+                        Po Nazivu
+                    </td>
+                    <td>
+                        <select name="Naziv">
+                            <option value="N">Nista</option>
+                            <option value="O">Opadajuce</option>
+                            <option value="R">Rastuce</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="pretraga">
+                    <td>
+                        Po Tipu
+                    </td>
+                    <td>
+                        <select name="TipTreninga">
+                            <option value="N">Nista</option>
+                            <option value="O">Opadajuce</option>
+                            <option value="R">Rastuce</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="pretraga">
+                    <td>
+                        Po Datumu i Vremenu
+                    </td>
+                    <td>
+                        <select name="DatumVreme">
+                            <option value="N">Nista</option>
+                            <option value="O">Opadajuce</option>
+                            <option value="R">Rastuce</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="pretraga">
+                    <td class="submit" colspan="2">
+                        <input class="submit" type="submit" value="Sortiraj" />
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </form>
+}
